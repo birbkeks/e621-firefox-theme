@@ -1,0 +1,92 @@
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+    .click-target-container *, .top-sites-list * {
+        color: #D9513A !important ;
+    }
+
+    :root[lwt-newtab-brighttext] {
+        --newtab-background-color: #002866 !important;
+    }
+
+    body::before {
+        content: "";
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #012E57 url("images/mascot.png") center ;
+        background-repeat: no-repeat ;
+        background-size: auto;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@-moz-document url(about:newtab), url(about:home), url(about:privatebrowsing) { 
+/* Changes the logo on the about:home screen */
+
+.logo {
+    background-image: url("images/eicon.png") !important;
+    width: 200px !important;
+    min-height: 82px !important;
+    background-size: 200px !important;
+}
+
+.logo-and-wordmark {
+    margin-bottom: 5px !important;
+}
+
+.info {
+    margin-top: 20px !important;
+}
+
+.container {
+    margin-top: 15vh !important;
+}
+
+.wordmark { 
+    display: none !important; 
+ }
+
+ .search-wrapper {
+    padding: 180px 0 0px !important;
+}
+
+.search-wrapper .search-handoff-button {
+    background-color: #203B66 !important;
+
+}
+
+.top-site-outer .tile {
+    background-color: #203B66 !important;
+}
+
+.top-site-outer .default-icon, .top-site-outer .search-topsite {
+    background-color: #203B66 !important;
+}
+
+.search-wrapper .search-inner-wrapper {
+    width: 480px !important;
+}
+
+.search-wrapper .logo-and-wordmark {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+}
+
+.ds-outer-wrapper-breakpoint-override main {
+    width: 508px !important;
+    height: 570px !important;
+}
+
+main section {
+    left: 13px !important;
+}
+
+.non-collapsible-section {
+    padding: 0 !important;
+}
+
+.collapsible-section {
+    padding: 10px 13px !important;
+}
+
+}
